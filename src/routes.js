@@ -1,28 +1,28 @@
 import App from './containers/Layout';
-
 import AnotherPage from './containers/AnotherPage';
+import CheckoutPage from './containers/CheckoutPage';
 
 const routes = () => ({
   path: '/',
   component: App,
   indexRoute: {
-    component: AnotherPage,
+    component: CheckoutPage
   },
-  childRoutes: [{
-    path: 'another',
-    getComponent(nextState, cb) {
-      require.ensure([], require => {
-        cb(null, require('./containers/AnotherPage').default);
-      }, 'another');
-    },
-  }, {
-    path: '*',
-    getComponent(nextState, cb) {
-      require.ensure([], require => {
-        cb(null, require('./containers/NotFoundPage').default);
-      }, 'notFound');
-    },
-  }],
+  // childRoutes: [{
+  //   path: 'checkout',
+  //   getComponent(nextState, cb) {
+  //     require.ensure([], require => {
+  //       cb(null, require('./containers/CheckoutPage').default);
+  //     }, 'checkout');
+  //   },
+  // }, {
+  //   path: '*',
+  //   getComponent(nextState, cb) {
+  //     require.ensure([], require => {
+  //       cb(null, require('./containers/NotFoundPage').default);
+  //     }, 'notFound');
+  //   },
+  // }],
 });
 
 export default routes;

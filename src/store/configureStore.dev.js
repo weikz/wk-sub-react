@@ -26,4 +26,4 @@ const configureStore = preloadedState => {
     return store;
 };
 
-export default configureStorface
+export default configureStore
