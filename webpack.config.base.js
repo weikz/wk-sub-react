@@ -26,7 +26,6 @@ module.exports = {
         })
     ],
 
-
     resolve: {
         alias: {
             common: `${__dirname}/src/components/common`,

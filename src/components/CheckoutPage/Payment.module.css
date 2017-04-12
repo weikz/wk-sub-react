@@ -1,0 +1,87 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+.body {
+  font: 72px;
+  color: #555;
+  background-repeat: repeat;
+  background-size: 100% 1080;
+
+}a
+
+.h11{
+  font-size: 72px;
+}
+
+.payment {
+  width: 500px;
+  margin: 0 auto;
+  padding: 35px 0;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+
+select {
+  width: 200px;
+  display: block;
+  margin: 0 auto 10px;
+  margin-bottom: 5px;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+label, input, button {
+  display: block;
+  width: 200px;
+  margin: 0 auto 10px;
+}
+
+label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #777;
+}
+
+input {
+  padding: 10px 15px;
+  font-size: 14px;
+  color: inherit;
+  border: 1px solid #aaa;
+  outline: 0;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  border: 0;
+  border-bottom: 3px solid #37b;
+  background: #48c;
+}
+
+input.invalid {
+  border: 1px solid red;
+}
+
+.validation.failed:after {
+  color: red;
+  content: 'Validation failed';
+}
+
+.validation.passed:after {
+  color: green;
+  content: 'Validation passed';
+}

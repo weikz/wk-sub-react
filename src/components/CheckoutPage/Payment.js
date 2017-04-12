@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router';
 
+import styles from './Payment.module.css';
+
 const Payment = () => (
-    <div>
+    <div className={styles.payment}>
         <form action="/checkout" method="post">
             <label>方案:</label>
             <select name="plan">

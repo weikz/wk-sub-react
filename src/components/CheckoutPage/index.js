@@ -1,16 +1,17 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 
+import Title from './Title';
 import Payment from './Payment';
 
 
 const CheckoutPage = () => (
     <div>
        <Helmet 
-            title="WK 訂閱制 DEMO"
+            title="WK訂閱制 - 結帳DEMO"
        />
-       <p>This is Checkout Page</p>
-       <Payment/>
+       <Title />
+       <Payment />
     </div>
 )
 

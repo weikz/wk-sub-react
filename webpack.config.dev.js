@@ -27,7 +27,7 @@ module.exports = merge.smart(config, {
         rules: [
             {
                 test: /^((?!\.module).)*\.css$/,
-                loaders: [
+                use: [
                 'style-loader',
                 'css-loader?sourceMap',
                 ],
@@ -37,9 +37,9 @@ module.exports = merge.smart(config, {
             },
             {
                 test: /\.module\.css$/,
-                loaders: [
+                use: [
                 'style-loader',
-                'css-loader?modules&sourceMap&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]', // eslint-disable-line max-len
+                'css-loader?modules&importLoaders=1',
                 'postcss-loader',
                 ],
                 exclude: /node_modules/
