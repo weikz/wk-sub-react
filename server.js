@@ -28,6 +28,13 @@ app.use(require('webpack-dev-middleware')(compiler, {
 
 app.use(require('webpack-hot-middleware')(compiler));
 
+app.post('/checkout', (req, res, next) => {
+    request.post({url: 'http://localhost:3000/checkout', form: req.body }, function (err, response, body){
+        var body = JSON.parse(body);
+        res.send(body.html);
+    });
+});
+
 app.get('*', (req, res, next) => {
     const filename = path.join(compiler.outputPath, 'index.html');
 

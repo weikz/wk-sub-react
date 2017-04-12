@@ -7,15 +7,8 @@
 
 html, body {
   height: 100%;
+  background-image: url(../images/bg.png);
 }
-
-.body {
-  font: 72px;
-  color: #555;
-  background-repeat: repeat;
-  background-size: 100% 1080;
-
-}a
 
 .h11{
   font-size: 72px;
