@@ -5,9 +5,9 @@
   box-sizing: border-box;
 }
 
-html, body {
+body {
   height: 100%;
-  background-image: url(../images/bg.png);
+  background-color: #d0d0d0;
 }
 
 .h11{
